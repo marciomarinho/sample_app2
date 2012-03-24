@@ -23,6 +23,7 @@ end
 group :test, :development do
   gem "rspec-rails", "~> 2.6"
   gem 'webrat'
+	gem 'spork'
 end
 
 gem 'jquery-rails'
