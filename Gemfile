@@ -24,8 +24,8 @@ group :test, :development do
   gem "rspec-rails", "~> 2.6"
   gem 'webrat'
 	gem 'spork'
-	#gem 'annotate', '2.4.0' 
 	gem 'annotate', :git => 'git://github.com/jeremyolliver/annotate_models.git', :branch => 'rake_compatibility'
+	gem 'factory_girl_rails', '~> 3.0' 
 end
 
 gem 'jquery-rails'
@@ -44,3 +44,5 @@ gem 'jquery-rails'
 
 # To use debugger
 # gem 'ruby-debug19', :require => 'ruby-debug'
+
+gem 'gravatar_image_tag'
