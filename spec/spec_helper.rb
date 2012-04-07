@@ -15,6 +15,10 @@ Spork.each_run do
 
 end
 
+def test_sign_in(user)
+	controller.sign_in(user)
+end
+
 # --- Instructions ---
 # Sort the contents of this file into a Spork.prefork and a Spork.each_run
 # block.
