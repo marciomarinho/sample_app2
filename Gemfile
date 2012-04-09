@@ -25,9 +25,11 @@ group :test, :development do
   gem 'webrat'
 	gem 'spork'
 	gem 'annotate', :git => 'git://github.com/jeremyolliver/annotate_models.git', :branch => 'rake_compatibility'
-	gem 'factory_girl_rails', '~> 3.0' 
+	gem 'factory_girl_rails', '~> 3.0'
+  gem 'faker'
 end
 
+gem 'will_paginate'
 gem 'jquery-rails'
 
 # To use ActiveModel has_secure_password
