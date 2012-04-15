@@ -46,7 +46,14 @@ describe UsersController do
 		it "should have a profile image" do
 			get :show, :id => @user
 			response.should have_selector("h1>img", :class => "gravatar")
-		end
+    end
+
+    it "should show the user's microposts" do
+      mp1 = FactoryGirl.create(:micropost, :user => @user,
+                              :content => "Foo bar")
+      mp2 = FactoryGirl.create(:micropost, :user => @user,
+                               :content => "Bar quiz")
+    end
 
 	end
 
